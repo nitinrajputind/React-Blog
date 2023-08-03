@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./theLatest.css"
 
 const TheLatest = (props) => {
-  const { title, id, image, description,Category } = props;
+  const { title, id, image, description } = props;
   return (
-    <Link  to={`:${Category}/${id}`} state={{ articleID: id }}>
+    <Link  to={"/detaildescription/"+id} state={{ articleID: id }}>
       <div className="card">
         <div className="img_card">
           <img src={image} alt="not Found" />

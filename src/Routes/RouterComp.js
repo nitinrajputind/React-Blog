@@ -18,7 +18,7 @@ const RouterComp = () => {
         <Route path="/Hollywood" element = {<Hollywood/>}/>
         <Route path="/Fitness" element = {<Fitness/>}/>
         <Route path="/Food" element = {<Food/>}/>
-        <Route path=":category/:articleId" element = {<BlogPage/>}/>
+        <Route path="/detaildescription/:id" element = {<BlogPage/>}/>
         {/* <Route path="/*" element = {<Error/>}/> */}
     </Routes>
    </>
