@@ -26,6 +26,7 @@ const Home = () => {
               title = {item.title} 
               id = {item.id} 
               image = {item.img} 
+              Category = {item.category}
               description ={item.description.slice(0,200)}/>
             )
           })
