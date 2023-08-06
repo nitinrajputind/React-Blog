@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import data from "../Context/ContextData";
-import { BiSolidUser, BiShareAlt } from "react-icons/bi";
+import { BiShareAlt } from "react-icons/bi";
 import { FaHands } from "react-icons/fa6";
 import {
   AiFillFacebook,
@@ -10,16 +10,20 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai";
 import "./blogPage.css";
-import TheLatest from "../Components/TheLatest";
+import FromSerian from "../Components/FromSerian";
+
+import User from "../assets/User2.png"
 
 const BlogPage = () => {
   // Take Id From The Link
   const location = useLocation();
-  const { articleID } = location.state;
+  const { articleID , Cat } = location.state;
   console.log(articleID);
+  console.log(Cat);
+  
 
   const ApiData = useContext(data);
-  console.log(ApiData);
+  // console.log(ApiData);
   return (
     <>
       <div className="Main_Desc">
@@ -48,7 +52,8 @@ const BlogPage = () => {
               <div className="user">
                 <div className="username">
                   <div className="usericon">
-                    <BiSolidUser className="icon" />
+
+                    <img src={User} alt=""  className="icon"/>
                     {/* This is Authour name Icon */}
                   </div>
                   <div className="name">
@@ -81,7 +86,7 @@ const BlogPage = () => {
               <div className="user">
                 <div className="username">
                   <div className="usericon">
-                    <BiSolidUser className="icon" />{" "}
+                  <img src={User} alt=""  className="icon"/>
                     {/* This is Authour name Icon */}
                   </div>
                   <div className="name">
@@ -117,19 +122,22 @@ const BlogPage = () => {
             />
           </h2>
           <div className="Latest_contanier">
-            {ApiData.filter((data) => data.id <= 14 && (data.id%2 ===0 && data.id %4 === 0)).map(
+            {ApiData.filter((data) => data.id %2 === 0 && (data.id % 4 ===0)).map(
+              // eslint-disable-next-line array-callback-return
               (item, index) => {
-                // console.log(item)
-                return (
-                  <TheLatest
-                    key={index}
-                    title={item.title}
-                    id={item.id}
-                    image={item.img}
-                    Category={item.category}
-                    description={item.description.slice(0, 200)}
-                  />
-                );
+                if (item.category === Cat) {
+                  console.log(item.id)
+                  return (
+                    <FromSerian
+                       key={index}
+                      title={item.title}
+                      id={item.id}
+                      image={item.img}
+                      Category={item.category}
+                      description={item.description.slice(0, 200)}
+                   />
+                   );
+                }
               }
             )}
           </div>

@@ -26,3 +26,15 @@
 /* Featured style End  */
 
 
+
+/* Latest Article and top post */
+.Section_Contanier{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+

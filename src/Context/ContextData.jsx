@@ -54,7 +54,7 @@ const data = createContext([
         "id": 8,
         "title": "Amitabh Bachchanr",
         "img": "https://media.gettyimages.com/photos/indian-actor-amitabh-bachchan-poses-on-the-red-carpet-for-the-4th-picture-id97942617?k=20&m=97942617&s=612x612&w=0&h=sjWZ5uQGKCfe3xuaEnbRluarZVhCinXidBwJjJaUtho=",
-        "category": "bollywood",
+        "category": "Bollywood",
         "description": "Amitabh Bachchan was born on October 11, 1942 in Allahabad, British India (present-day Prayagraj, Uttar Pradesh, India) to legendary poet Harivansh Rai Bachchan & Teji Bachchan. He also has a brother named Ajitabh. He completed his education from Uttar Pradesh and moved to Bombay to find work"
     },
     {
@@ -117,14 +117,14 @@ const data = createContext([
     {
         "id": 17,
         "title": "Bollywood Deepika Padukone looks jaw droppingly stunning in latest photos",
-        "img": "https://www.pinkvilla.com/imageresize/deepika_69.jpg?width=752&format=webp&t=pvorg",
+        "img": "https://images.hindustantimes.com/img/2022/01/25/1600x900/deepika_padukone_1643077687218_1643077802079.jpg",
         "category": "Bollywood",
         "description": "Deepika Padukone never fails to impress us with her style. The stunning actress is an epitome of grace and charm. Deepika is the highest paid actress in the country today and has made it to the Top 5 of Forbes List of Richest Indian Celebs. The actor was featured in TIME magazine’s 100 Most Influential People List and is one of the few Indian actors to have attended coveted events abroad. "
     },
     {
         "id": 18,
         "title": "Bollywood Aishwarya Rai Bachchan, Abhishek Bachchan and daughter Aaradhya return ",
-        "img": "https://www.pinkvilla.com/imageresize/abhishek%20bachchan%20aishwarya%20aaradhya%20%282%29.JPG?width=752&format=webp&t=pvorg",
+        "img": "https://www.hindustantimes.com/ht-img/img/2023/07/22/550x309/Abhishek_Bachchan_1689997348909_1689997357512.jpg",
         "category": "Bollywood",
         "description": "Aishwarya Rai Bachchan, Abhishek Bachchan and daughter Aaradhya returned to Mumbai today after ringing in 2019 abroad. Abhishek and Aishwarya shared photos from their New Year getaway as the family basked in the sun. At the airport, daughter Aaradhya was engaged in a conversation with her parents and looked cute as a button in a pink dress."
     },
@@ -216,7 +216,7 @@ const data = createContext([
         "id": 31,
         "title": "Why I fell in love with Microsoft’s Surface Laptop Studio despite its shortcomings ",
         "img": "https://images.indianexpress.com/2022/05/K1.jpg",
-        "category": "technology",
+        "category": "Technology",
         "description": "As I was waiting for someone at a Delhi hotel recently, I saw a gentleman coming my way. He sat next to me and curiously asked about the laptop I was using. “It’s a Surface Laptop Studio,” I replied. “Does Microsoft make its own laptops?” He admitted he wasn’t aware of the Surface brand but told me he liked the form factor of the Surface Laptop Studio. “It’s different from my MacBook Pro,” said the man who introduced himself as the owner of an architectural firm. This conversation just reinforced my belief that there will be takers for Microsoft’s experimental Surface Laptop Studio, which blends certain elements of the desktop Surface Studio and the premium 2-in-1 Surface Book. It’s a mobile workstation that’s also a sketching slate and a portable home theater. I have been using the Surface Laptop Studio for a few days, and I am in love with this device even though it is not perfect. Here is my review."
     },
     {
@@ -443,6 +443,15 @@ const data = createContext([
         "img": "https://images.news18.com/ibnlive/uploads/2022/04/tofu-16510624083x2.jpg?impolicy=website&width=510&height=356",
         "category": "Food",
         "description": "If you are a fitness enthusiast and a vegan, you might be one of the people who have tofu in their meals instead of paneer. While many people find it easily in the supermarket, others may find it difficult to spot tofu at their local stores. If you are one of those people, don’t worry as this simple method can help you make protein-rich tofu at home with just two ingredients – chickpeas and water.Once the tofu is set, you can use it as and when required. It is as tasty as the tofu bought from a store and tofu is as versatile as cottage cheese. It can be used in dry and wet recipes depending on your mood and diet requirements. Chickpea is rich in protein and hence the tofu is a great source of protein to help you complete the daily protein requirement.Soak the chickpeas overnight after thoroughly washing with the help of a strainer under running water.Drain all the water and wash the chickpeas the next day. Add chickpeas with two cups of water in a blender and blend in batches until you have a smooth mixture.Strain the blended chickpeas through a muslin cloth into a bowl. Make a squeezable bag out of the muslin cloth with the mixture in it. Squeeze the blend well to strain it nicely. As the water drains slowly from the mixture, it takes some time to strain the blend.Take the strained blend and put it in a pot. Keep the pot on full flame and let the mixture boil. Once you see bubbles, lower the flame and cook the blend for another half n hour. The mixture will thicken with time. When it is thick enough, put off the flame and let the blend cool down for a while. Leave the mixture in a container for more than 2 hours idle. This will ensure that the mixture sits and the tofu sets properly"
+    },
+    {
+        "id": "64",
+        "title": "Ananya Panday, Aditya Roy Kapur, Sara Ali Khan, Ranbir Kapoor, Kiara Advani and more: Showstoppers at India Couture Week",
+        "img" : "https://www.hindustantimes.com/ht-img/img/2023/08/01/960x540/kiara_1690888189872_1690888247702.jpg",
+        "category" : "Bollywood",
+        "description" : "Kiara Advani's stunning appearance as the showstopper for designer duo Falguni and Shane Peacock's opening show left the audience in awe. The pink Barbie-inspired look adorned with intricate bead and sequin work showcased the perfect blend of elegance and glamour.The dress's top, featuring a daring plunging neckline, added a touch of sensuality to the overall look. As she gracefully glided down the ramp, all eyes were drawn to the mesmerizing skirt with its high slit, revealing her impeccable sense of style. The long train trailing behind her added an element of drama, making the entire ensemble a true show-stopping moment.On social media, netizens showered Kiara Advani with praises, affectionately calling her 'desi Barbie.' Her ethereal presence on the runway truly embodied the essence of a modern-day princess. The Barbie-inspired look not only captured hearts but also served as an inspiration for fashion enthusiasts across the globe.With her elegance and charm, Kiara Advani once again proved why she is one of the most sought-after and celebrated actors in the industry. Her collaboration with the visionary designers Falguni and Shane Peacock was a match made in fashion heaven, setting the tone for a memorable and glamorous event.As fashion enthusiasts eagerly await more breathtaking moments on the ramp, Kiara's charisma and poise have undoubtedly left an indelible mark on the fashion world, ensuring that she will forever be remembered as the 'desi Barbie' who stole the show.",
+
+
     },
 ]);
 
