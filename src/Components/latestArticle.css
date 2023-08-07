@@ -47,12 +47,13 @@
     font-size: 1.1rem;
     font-weight: 700;
     overflow: hidden;
+    color: #2d3436;
 }
 .articleheading p{
     font-size: 1rem;
     color: #908D8D;
+    font-weight: 600;
 }
-
 
 
 @media screen and (max-width: 734px) {

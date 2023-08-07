@@ -47,7 +47,18 @@ const Home = () => {
           Latest Articles
           <hr style={{width: "100px", height: "3px", background: "red", border: "none" , outline:"none" , borderRadius:"5px"}}/>
         </h2>
-        <LatestArticle/>
+        {
+         Apidata.filter((data)=>data.id % 2 ===  0 && data.id % 4 === 0).map((item, index)=>{
+          return(
+            <LatestArticle key={index}
+            title = {item.title.slice(0,100)} 
+            id = {item.id} 
+            image = {item.img} 
+            Category = {item.category}
+            description ={item.description.slice(0,100)}/>
+          )
+         })
+        }
         </div>
 
 
@@ -58,7 +69,19 @@ const Home = () => {
           To Posts
           <hr style={{width: "100px", height: "3px", background: "red", border: "none" , outline:"none" , borderRadius:"5px"}}/>
         </h2>
-        <TopPost/>
+        {
+         Apidata.filter((data)=>data.id % 3 ===  0 && data.id % 6 === 0).map((item, index)=>{
+          return(
+            <TopPost key={index}
+            title = {item.title.slice(0,50)} 
+            id = {item.id} 
+            image = {item.img} 
+            Category = {item.category}
+            description ={item.description.slice(0,80)}
+            index ={index}/>
+          )
+         })
+        }
         </div>
       </div>
     </div>

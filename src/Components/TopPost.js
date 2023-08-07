@@ -1,25 +1,27 @@
 import React from 'react'
 import "./topPost.css"
+import "./latestArticle.css"
+import { Link } from 'react-router-dom'
 
 
-
-const TopPost = () => {
+const TopPost = (props) => {
+  const { title, id, image, description , Category, index} = props;
   return (
-    <>
+    <Link  to={"/detaildescription/"+id} state={{ articleID: id , Cat : Category}}>
       <div className='Post_Contanier'>
       <div className="PostImg">
-        <img src="https://www.hindustantimes.com/ht-img/img/2023/08/01/550x309/aditi_1690888322185_1690888350608.jpg" alt="" />
+        <img src={image} alt="" />
       </div>
       <div className="Post_Content">
         <div className="Post_heading">
-        <h2>accusantium culpa quasi neque, nihil illo!</h2>
-        <p>Lquo dolor fuga voluptas ipsa facere accusamus esse dignissimos provident, beatae reprehenderit quos?</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
         </div>
-        <p>TRAVEL <span> / August 21 2017</span></p>
-        <h1 className='num'>1</h1>
+        <p className='publish'>TRAVEL <span> / August 21 2017</span></p>
+        <h1 className='num'>{index+1}</h1>
       </div>
     </div>
-    </>
+    </Link>
   )
 }
 
