@@ -4,9 +4,9 @@ import "./theLatest.css"
 import { Link } from "react-router-dom";
 
 const FromSerian = (props) => {
-    const { title, id, image, description } = props;
+    const { title, id, image, description, Category} = props;
   return (
-    <Link  to={"/detaildescription/"+id} state={{ articleID: id }}>
+    <Link  to={"/detaildescription/"+id} state={{ articleID: id, Cat : Category}}>
       <div className="card">
         <div className="img_card">
           <img src={image} alt="not Found" />
