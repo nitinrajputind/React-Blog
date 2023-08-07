@@ -5,6 +5,7 @@ import data from "../Context/ContextData.jsx"
 import TheLatest from '../Components/TheLatest';
 import TopPost from '../Components/TopPost';
 import LatestArticle from '../Components/LatestArticle';
+import TextNews from '../Components/TextNews';
 
 const Home = () => {
   const Apidata = useContext(data);
@@ -84,6 +85,29 @@ const Home = () => {
         }
         </div>
       </div>
+
+
+      {/* Text News Only  */}
+
+      <div className="TheLatest">
+      <div className="Latest_contanier">
+        {
+          Apidata.filter((data)=>data.id % 3 === 0 && (data.category === "Hollywood")).map((item,index)=>{
+            // console.log(item)
+            return(
+              
+              <TextNews key={index}
+              title = {item.title} 
+              id = {item.id} 
+              image = {item.img} 
+              Category = {item.category}
+              description ={item.description.slice(0,200)}/>
+            )
+          })
+        }
+        </div>
+      </div>
+
     </div>
   )
 }
